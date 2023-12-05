@@ -1,11 +1,12 @@
 'use strict'
 
-function openExternalLink(web) {
-    console.log('here');
-    var website = 'https://' + web
+$(document).ready(function() {
+    function openExternalLink(web) {
+    var website = 'https://' + web;
     window.open(website, '_blank');
 }
-document.querySelector('.header-presentation-button').addEventListener('click', function(){
-    console.log('here');
+$('.header-presentation-button').on('click', function () {
     openExternalLink('github.com/InesLozanoLopez')
 });
+
+})
